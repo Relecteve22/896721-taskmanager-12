@@ -9,7 +9,7 @@ const render = (container, element, place) => {
   container.insertAdjacentHTML(place, element);
 };
 
-const creatMenuTemplate = () => {
+const createMenuTemplate = () => {
   return (
     `<section class="control__btn-wrap">
     <input
@@ -42,7 +42,7 @@ const creatMenuTemplate = () => {
   );
 };
 
-const creatFilterTemplate = () => {
+const createFilterTemplate = () => {
   return (
     `<section class="main__filter filter container">
     <input
@@ -106,7 +106,7 @@ const creatFilterTemplate = () => {
   );
 };
 
-const creatBoardTemplate = () => {
+const createBoardTemplate = () => {
   return (
     `<section class="board container">
     <div class="board__filter-list">
@@ -120,7 +120,7 @@ const creatBoardTemplate = () => {
   );
 };
 
-const creatAddTaskTemplate = () => {
+const createAddTaskTemplate = () => {
   return (
     `<article class="card card--edit card--black">
     <form class="card__form" method="get">
@@ -321,7 +321,7 @@ const creatAddTaskTemplate = () => {
   );
 };
 
-const creatTaskTemplate = () => {
+const createTaskTemplate = () => {
   return (
     `<article class="card card--blue">
     <div class="card__form">
@@ -369,25 +369,25 @@ const creatTaskTemplate = () => {
   );
 };
 
-const creatButtonLoadMore = () => {
+const createButtonLoadMore = () => {
   return (
     `<button class="load-more" type="button">load more</button>`
   );
 };
 
-render(siteHeaderElement, creatMenuTemplate(), `beforeend`);
-render(siteHeaderElement, creatFilterTemplate(), `afterend`);
+render(siteHeaderElement, createMenuTemplate(), `beforeend`);
+render(siteHeaderElement, createFilterTemplate(), `afterend`);
 
 const siteFilterElement = siteMainElement.querySelector(`.main__filter`);
 
-render(siteFilterElement, creatBoardTemplate(), `afterend`);
+render(siteFilterElement, createBoardTemplate(), `afterend`);
 
 const siteBoardTasksElement = siteMainElement.querySelector(`.board__tasks`);
 
-render(siteBoardTasksElement, creatAddTaskTemplate(), `afterbegin`);
+render(siteBoardTasksElement, createAddTaskTemplate(), `afterbegin`);
 
 for (let i = 0; i < TASK_NUMBERS; i++) {
   render(siteBoardTasksElement, creatTaskTemplate(), `beforeend`);
 };
 
-render(siteBoardTasksElement, creatButtonLoadMore(), `afterend`);
+render(siteBoardTasksElement, createButtonLoadMore(), `afterend`);
