@@ -41,7 +41,7 @@ const creatMenuTemplate = () => {
   </section>`
   );
 };
-
+// каирк
 const creatFilterTemplate = () => {
   return (
     `<section class="main__filter filter container">
