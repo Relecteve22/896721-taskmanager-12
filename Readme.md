@@ -1,7 +1,7 @@
 # Личный проект «Менеджер задач» [![Build status][travis-image]][travis-url]
 
 * Студент: [Илья Филонов](https://up.htmlacademy.ru/ecmascript/12/user/896721).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Мязитов](https://up.htmlacademy.ru/ecmascript/12/user/1164307).
 
 ---
 
